@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queening Africa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar flex items-center justify-between flex-wrap p-6">
+    <div class="flex items-center flex-shrink-0 text-black mr-6">
+      <h1 class="text-2xl font-bold mb-3">Queening Africa</h1>
+    </div>
+    <div class="block lg:hidden">
+      <button class="navbar-burger flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-black hover:border-black">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="navbar-menu hidden lg:flex lg:items-center lg:w-auto">
+      <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4">
+        Home
+      </a>
+      <a href="#our-products" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4">
+        Our Products
+      </a>
+      <a href="#our-mission" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4">
+        Our Mission
+      </a>
+      <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <div id="home" class="flex flex-wrap items-center justify-center h-screen">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">WELCOME TO QUEENING AFRICA</h1>
+      <p class="text-lg">We make mats and handbags from recycling braids and wigs that have been disposed.</p>
+    </div>
+    <div class="card1 bg-cover bg-center text-white text-center p-10 rounded-lg shadow-lg" style="background-image: url('./images/image1.jpg');">
+      
+    </div>
+  </div>
+
+  <!-- Our Products -->
+  <div id="our-products" class="container mx-auto my-10">
+    <h2 class="text-3xl font-bold mb-10">Our Products</h2>
+    <div class="flex flex-wrap justify-center">
+      <div class="card w-full md:w-1/4 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('./images/bag.jpg');"></div>
+      <div class="card w-full md:w-1/4 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('./images/rug.jpeg');"></div>
+      <div class="card w-full md:w-1/4 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('./images/hairs.jpeg');"></div>
+    </div>
+  </div>
+
+  <!-- Our Mission -->
+  <div id="our-mission" class="container mx-auto my-10">
+    <h2 class="text-3xl font-bold mb-10">Our Mission</h2>
+    <p class="text-lg">At Queening Africa, our mission is to create sustainable and eco-friendly products that empower women and promote environmental conservation.</p>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="container mx-auto my-10">
+    <h2 class="text-3xl font-bold mb-10">Contact Us</h2>
+    <form class="w-full max-w-lg mx-auto">
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            First Name
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+        </div>
+        <div class="w-full md:w-1/2 px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Last Name
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="text" placeholder="Doe">
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+            Email
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="jane.doe@example.com">
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
+            Message
+          </label>
+          <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-message" placeholder="Enter your message here"></textarea>
+        </div>
+      </div>
+      <div class="md:flex md:items-center">
+        <div class="md:w-1/3">
+          <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+            Send
+          </button>
+        </div>
+        <div class="md:w-2/3"></div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2023 Queening Africa. All rights reserved.</p>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+* {
+  padding: 4px;
+  margin: 0;
+}
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+  height: 50vh;
+  padding: 1rem;
+  margin: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card1 {
+  height: 70vh;
+  width: 40vw;
+  padding: 1rem;
+  margin: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+/* Footer */
+.footer {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card1 {
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
