@@ -35,6 +35,30 @@
   text-align: center;
 }
 
+/* Order button */
+.order-btn {
+  background-color: #6B46C1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+.order-btn:hover {
+  transform: scale(1.1);
+}
+
+.product-img {
+  width: 30vw;
+  height: 22vh;
+  object-fit: fill;
+}
+
+#map {
+  height: 200px;
+  width: 60%;
+}
+
 @media (max-width: 768px) {
   .card1 {
     width: 100vw;
